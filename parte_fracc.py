@@ -3,10 +3,12 @@ Inserta el encabezado aquí y escribe tu código abajo
 """
 
 # Entradas
-numero = input("Introduzca un número: ")
+numero = float(input("Introduzca un número: "))
 
 # Proceso
-if int(numero):
-    print("No tiene decimales")
-elif float(numero):
-    print("Sí tiene decimales")
+if numero - int(numero) > 0:
+    salida = "Sí tiene decimales"
+elif numero - int(numero) == 0:
+    salida = "No tiene decimales"
+
+print(salida)
